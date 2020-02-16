@@ -48,7 +48,6 @@ public class GitHunProvider {
             Response response = client.newCall(request).execute();
             String string = response.body().string();
             GitHubUser gitHubUser = JSON.parseObject(string, GitHubUser.class);
-            System.out.println(gitHubUser.getName());
             return gitHubUser;
 
         } catch (IOException e) {
