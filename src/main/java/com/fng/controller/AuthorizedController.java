@@ -59,12 +59,12 @@ public class AuthorizedController {
             userMapper.insert(user);
             //写cookie和session
             response.addCookie(new Cookie("token",token));
-            return "redirect:/index";
+            return "redirect:/";
         }else{
             //登录失败
             //重新登陆
+            return "redirect:/";
         }
-        return "index";
 
 
     }
