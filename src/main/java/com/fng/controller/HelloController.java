@@ -14,6 +14,6 @@ public class HelloController {
         //将浏览器传递的数据，放入model
         model.addAttribute("name",name);
 
-        return "hello";//去模板目录查找hello.html
+        return "index";//去模板目录查找hello.html
     }
 }
