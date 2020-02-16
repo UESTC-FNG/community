@@ -2,7 +2,9 @@ package com.fng.controller;
 
 import com.fng.dto.AccessTokenDTO;
 import com.fng.dto.GitHubUser;
+import com.fng.mapper.UserMapper;
 import com.fng.provider.GitHunProvider;
+import com.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.UUID;
 
 @Controller
 public class AuthorizedController {
@@ -28,6 +31,9 @@ public class AuthorizedController {
     @Value("${github.redirect.uri}")
     private String gitHubDirectUri;
 
+    @Autowired
+    private UserMapper userMapper;
+
 
     @GetMapping("/callback")
     public String callback(@RequestParam(name="code")String code,
@@ -40,20 +46,23 @@ public class AuthorizedController {
         dto.setClient_id(ClientId);
         dto.setClient_secret(ClientSecret);
         String accessToken = gitHunProvider.getAccessToken(dto);
-        GitHubUser user = gitHunProvider.getUser(accessToken);
-        if (user!=null){
+        GitHubUser gitHubUser = gitHunProvider.getUser(accessToken);
+        if (gitHubUser!=null){
             //做登陆成功的操作
+            User user = new User();
+            user.setToken(UUID.randomUUID().toString());
+            user.setName(gitHubUser.getName());
+            user.setAccount_id(String.valueOf(gitHubUser.getId()));
+            user.setGmtCreate(System.currentTimeMillis());
+            user.setGmtModified(user.getGmtCreate());
+            userMapper.insert(user);
             //写cookie和session
-            System.out.println("user有对象");
             HttpSession session = request.getSession();
-            session.setAttribute("user",user);//将user对象放入session
+            session.setAttribute("user",gitHubUser);//将user对象放入session
             return "redirect:/index";
-
         }else{
             //登录失败
             //重新登陆
-            System.out.println("user无对象");
-
         }
         return "index";
 
