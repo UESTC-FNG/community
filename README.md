@@ -9,4 +9,6 @@
 ##工具
 [flyway](https://flywaydb.org/)
 [lombok](https://projectlombok.org/)
+[devtools]
+[LiveReload插件]
 ##
