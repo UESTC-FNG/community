@@ -64,8 +64,6 @@ public class PublishController {
                     if (user != null) {
                         request.getSession().setAttribute("user", user);
                     }
-                    System.out.println("找到了user");
-                    System.out.println(user);
                     break;
                 }
             }
