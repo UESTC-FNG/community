@@ -18,14 +18,14 @@ import javax.servlet.http.HttpServletRequest;
 public class PublishController {
     private Question question;
 
-    @Autowired
+    @Autowired(required = false)
     private QuestionMapper questionMapper;
     @GetMapping("/publish")
     public String publish(){
         return "publish";
     }
 
-    @Autowired
+    @Autowired(required = false)
     private UserMapper userMapper;
 
     @PostMapping("/publish")
@@ -56,18 +56,20 @@ public class PublishController {
         }
         User user=null;
         Cookie[] cookies = request.getCookies();
-        for (Cookie cookie:cookies) {
-            if (cookie.getName().equals("token")) {
-                String token = cookie.getValue();
-                user = userMapper.findByToken(token);
-                if (user != null) {
-                    request.getSession().setAttribute("user", user);
+
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals("token")) {
+                    String token = cookie.getValue();
+                    user = userMapper.findByToken(token);
+                    if (user != null) {
+                        request.getSession().setAttribute("user", user);
+                    }
+                    System.out.println("找到了user");
+                    System.out.println(user);
+                    break;
                 }
-                System.out.println("找到了user");
-                System.out.println(user);
-                break;
             }
-        }
+
         if (user==null){
             model.addAttribute("error","用户未登录");
 

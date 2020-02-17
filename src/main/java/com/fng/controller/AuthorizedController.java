@@ -31,7 +31,7 @@ public class AuthorizedController {
     @Value("${github.redirect.uri}")
     private String gitHubDirectUri;
 
-    @Autowired
+    @Autowired(required = false)
     private UserMapper userMapper;
 
 
@@ -56,6 +56,7 @@ public class AuthorizedController {
             user.setAccount_id(String.valueOf(gitHubUser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
+            user.setAvatar_url(gitHubUser.getAvatar_url());
             userMapper.insert(user);
             //写cookie和session
             response.addCookie(new Cookie("token",token));
