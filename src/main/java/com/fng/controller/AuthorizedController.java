@@ -4,6 +4,7 @@ import com.fng.dto.AccessTokenDTO;
 import com.fng.dto.GitHubUser;
 import com.fng.mapper.UserMapper;
 import com.fng.provider.GitHunProvider;
+import com.fng.service.UserService;
 import com.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -34,6 +35,9 @@ public class AuthorizedController {
     @Autowired(required = false)
     private UserMapper userMapper;
 
+    @Autowired
+    private UserService userService;
+
 
     @GetMapping("/callback")
     public String callback(@RequestParam(name="code")String code,
@@ -47,18 +51,17 @@ public class AuthorizedController {
         dto.setClient_secret(ClientSecret);
         String accessToken = gitHunProvider.getAccessToken(dto);
         GitHubUser gitHubUser = gitHunProvider.getUser(accessToken);
-        if (gitHubUser!=null){
+        if (gitHubUser!=null&&gitHubUser.getId()!=null){
             //做登陆成功的操作
             User user = new User();
             String token = UUID.randomUUID().toString();
             user.setToken(token);
             user.setName(gitHubUser.getName());
             user.setAccount_id(String.valueOf(gitHubUser.getId()));
-            user.setGmtCreate(System.currentTimeMillis());
-            user.setGmtModified(user.getGmtCreate());
             user.setAvatar_url(gitHubUser.getAvatar_url());
             user.setBio(gitHubUser.getBio());
-            userMapper.insert(user);
+            //判断创建或是更新用户数据
+            userService.createOrUpdate(user);
             //写cookie和session
             response.addCookie(new Cookie("token",token));
             return "redirect:/";
