@@ -57,6 +57,7 @@ public class AuthorizedController {
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
             user.setAvatar_url(gitHubUser.getAvatar_url());
+            user.setBio(gitHubUser.getBio());
             userMapper.insert(user);
             //写cookie和session
             response.addCookie(new Cookie("token",token));

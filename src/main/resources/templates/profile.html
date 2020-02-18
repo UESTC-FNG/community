@@ -28,6 +28,50 @@
             </div>
         </div>
     </div>
+
+    <div class="media" th:each="questionDTO:${pageNation.getQuestionDTOS()}">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object img-rounded"
+                     th:src="${questionDTO.user.avatar_url}" >
+            </a>
+        </div>
+        <div class="media-body" >
+            <h4 class="media-heading" th:text="${questionDTO.getTitle()}"></h4>
+            <span th:text="${questionDTO.getDescription()}"></span><br>
+            <span class="text-desc">• <span th:text="${questionDTO.getCreator()}"></span> 发起了问题 • <span th:text="${questionDTO.getLikecount()}"></span>人关注 • 0 个回复 • <span th:text="${questionDTO.getViewcount()}" }></span> 次浏览 •发布时间<span th:text="${#dates.format((questionDTO.gmtcreate),'yyyy MM dd HH:mm')}"></span></span>
+
+        </div>
+
+    </div>
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li>
+                <a th:if="${pageNation.getShowFirstPage()}"  th:href="@{'/profile/'+${section}(page=${1})}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li>
+                <a th:if="${pageNation.getShowPre()}"  th:href="@{/profile/${section}(page=${pageNation.page-1})}" aria-label="Previous">
+                    <span aria-hidden="true">&lt;</span>
+                </a>
+            </li>
+            <li th:class="${pageNation.page==page} ? 'active':''" th:each="page:${pageNation.pages}"><a th:href="@{/profile/${section}(page=${page})}"  th:text="${page}"></a></li>
+
+            <li>
+                <a th:if="${pageNation.getShowNext()}"  th:href="@{/profile/${section}(page=${pageNation.page+1})}" aria-label="Next">
+                    <span aria-hidden="true">&gt;</span>
+                </a>
+            </li>
+
+            <li>
+                <a th:if="${pageNation.getShowEndPage()}"  th:href="@{/profile/questions(page=${pageNation.totalPage})}" aria-label="Previous">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
 </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${questionDTO.getTitle()}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/community.css">
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js" type="application/javascript"></script>
+</head>
+<body>
+<div th:insert="navigation :: nav"></div>
+
+<div class="container-fluid main profile" >
+    <div class="row">
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <h3> <span th:text="${questionDTO.getTitle() }"></span></h3>
+            <span class="text-desc">
+                作者:<span th:text="${questionDTO.user.getName()}"></span>&nbsp;|
+                关注数:<span th:text="${questionDTO.getLikecount()}"></span>&nbsp;|
+                阅读数: <span th:text="${questionDTO.getViewcount()}" }></span>&nbsp;|
+                发布时间:<span th:text="${#dates.format((questionDTO.gmtcreate),'yyyy MM dd HH:mm')}"></span></span>
+            <hr>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:text="${questionDTO.getDescription()}"></div>
+            <hr  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+            <a class="community-menu" th:href="@{'/publish/'+${questionDTO.getId()}}">
+            <span class="glyphicon glyphicon-pencil " aria-hidden="true">
+            </span>编辑
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 " >
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4>发起人</h4>
+            </div>
+
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object img-circle"
+                         th:src="${questionDTO.user.avatar_url}" >
+                </a>
+            </div>
+            <div class="media-body" >
+                <h5 class="media-heading" >
+                    <span th:text="${questionDTO.getUser().getName()}"></span>
+                </h5>
+                <h6>
+                <span th:text="${questionDTO.getUser().getBio()}"></span><br>
+                </h6>
+            </div>
+
+            <hr class  ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4>相关问题</h4>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

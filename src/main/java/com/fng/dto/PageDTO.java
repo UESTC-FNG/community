@@ -25,7 +25,7 @@ public class PageDTO {
         }
         //计算totalPage
         totalPage=0;
-        if (totalCount/size==0){
+        if (totalCount%size==0){
             totalPage=totalCount/size;
         }else{
             totalPage=totalCount/size+1;

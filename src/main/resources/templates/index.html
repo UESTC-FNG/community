@@ -25,7 +25,9 @@
                     </a>
                 </div>
                 <div class="media-body" >
-                    <h4 class="media-heading" th:text="${questionDTO.getTitle()}"></h4>
+                    <h4 class="media-heading" >
+                        <a th:href="@{'/question/'+${questionDTO.getId()}}" th:text="${questionDTO.getTitle()}"></a>
+                    </h4>
                     <span th:text="${questionDTO.getDescription()}"></span><br>
                     <span class="text-desc">• <span th:text="${questionDTO.getCreator()}"></span> 发起了问题 • <span th:text="${questionDTO.getLikecount()}"></span>人关注 • 0 个回复 • <span th:text="${questionDTO.getViewcount()}" }></span> 次浏览 •发布时间<span th:text="${#dates.format((questionDTO.gmtcreate),'yyyy MM dd HH:mm')}"></span></span>
 
