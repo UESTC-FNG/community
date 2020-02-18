@@ -3,8 +3,8 @@ package com.fng.controller;
 import com.fng.mapper.QuestionMapper;
 import com.fng.mapper.UserMapper;
 import com.fng.service.QuestionService;
-import com.model.Question;
-import com.model.User;
+import com.fng.model.Question;
+import com.fng.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -83,7 +83,7 @@ public class PublishController {
     @GetMapping("/publish/{id}")
     public String edit(@PathVariable(name="id")Integer id,
                        Model model){
-        Question question = questionMapper.getById(id);
+        Question question = questionMapper.selectByPrimaryKey(id);
         //将获取的信息填入文本框，防止信息丢失
         model.addAttribute("title",question.getTitle());
         model.addAttribute("description",question.getDescription());

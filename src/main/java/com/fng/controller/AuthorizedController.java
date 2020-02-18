@@ -5,7 +5,7 @@ import com.fng.dto.GitHubUser;
 import com.fng.mapper.UserMapper;
 import com.fng.provider.GitHunProvider;
 import com.fng.service.UserService;
-import com.model.User;
+import com.fng.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -58,8 +58,8 @@ public class AuthorizedController {
             String token = UUID.randomUUID().toString();
             user.setToken(token);
             user.setName(gitHubUser.getName());
-            user.setAccount_id(String.valueOf(gitHubUser.getId()));
-            user.setAvatar_url(gitHubUser.getAvatar_url());
+            user.setAccountId(String.valueOf(gitHubUser.getId()));
+            user.setAvatarUrl(gitHubUser.getAvatar_url());
             user.setBio(gitHubUser.getBio());
             //判断创建或是更新用户数据
             userService.createOrUpdate(user);

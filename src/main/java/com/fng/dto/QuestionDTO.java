@@ -1,6 +1,6 @@
 package com.fng.dto;
 
-import com.model.User;
+import com.fng.model.User;
 import lombok.Data;
 
 @Data

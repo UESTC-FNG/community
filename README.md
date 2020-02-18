@@ -8,7 +8,12 @@
 [thymeleaf](https://www.thymeleaf.org/)
 ##工具
 [flyway](https://flywaydb.org/)
-[lombok](https://projectlombok.org/)
+[lombok  @Data](https://projectlombok.org/)
 [devtools]
+[MyBatis Generator](https://mybatis.org/generator/running/runningWithMaven.html)
 [LiveReload插件]
+
+
 ##
+mvn flyway:migrate
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate

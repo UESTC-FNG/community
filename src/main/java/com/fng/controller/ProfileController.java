@@ -3,7 +3,7 @@ package com.fng.controller;
 import com.fng.dto.PageDTO;
 import com.fng.mapper.UserMapper;
 import com.fng.service.QuestionService;
-import com.model.User;
+import com.fng.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
