@@ -2,12 +2,14 @@ package com.fng.controller;
 
 import com.fng.mapper.QuestionMapper;
 import com.fng.mapper.UserMapper;
+import com.fng.service.QuestionService;
 import com.model.Question;
 import com.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -24,6 +26,9 @@ public class PublishController {
         return "publish";
     }
 
+    @Autowired
+    private QuestionService questionService;
+
     @Autowired(required = false)
     private UserMapper userMapper;
 
@@ -33,12 +38,14 @@ public class PublishController {
             @RequestParam("description") String description,
             @RequestParam("tag")String tag,
                 HttpServletRequest request,
-            Model model
+            Model model,
+            @RequestParam("id")Integer id
     ){
         //将获取的信息填入文本框，防止信息丢失
         model.addAttribute("title",title);
         model.addAttribute("description",description);
         model.addAttribute("tag",tag);
+        model.addAttribute("id",id);
 
         //判断输入信息是否为空
         if (title==null||title==""){
@@ -66,11 +73,22 @@ public class PublishController {
         question.setDescription(description);
         question.setTag(tag);
         question.setCreator(user.getId());
-        question.setGmtcreate(System.currentTimeMillis());
-        question.setGmtmodified(question.getGmtcreate());
+        question.setId(id);
 
-        questionMapper.insertQuestion(question);
+        questionService.insertOrUpdate(question);
 
         return "redirect:/";
+    }
+
+    @GetMapping("/publish/{id}")
+    public String edit(@PathVariable(name="id")Integer id,
+                       Model model){
+        Question question = questionMapper.getById(id);
+        //将获取的信息填入文本框，防止信息丢失
+        model.addAttribute("title",question.getTitle());
+        model.addAttribute("description",question.getDescription());
+        model.addAttribute("tag",question.getTag());
+
+        return "publish";
     }
 }

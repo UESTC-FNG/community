@@ -1,7 +1,6 @@
 package com.fng.service;
 
 
-import com.alibaba.fastjson.JSON;
 import com.fng.dto.PageDTO;
 import com.fng.dto.QuestionDTO;
 import com.fng.mapper.QuestionMapper;
@@ -109,5 +108,21 @@ public class QuestionService {
        BeanUtils.copyProperties(question,questionDTO);
        questionDTO.setUser(user);
         return questionDTO;
+    }
+
+    public void insertOrUpdate(Question question) {
+        if (question.getId()==null){
+            //创建
+            question.setGmtcreate(System.currentTimeMillis());
+            question.setGmtmodified(question.getGmtcreate());
+            //插入数据库
+            questionMapper.insertQuestion(question);
+        }else{
+            //更新问题
+            question.setGmtmodified(System.currentTimeMillis());
+            questionMapper.update(question);
+        }
+
+
     }
 }
