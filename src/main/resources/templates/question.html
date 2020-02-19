@@ -18,9 +18,9 @@
             <h3> <span th:text="${questionDTO.getTitle() }"></span></h3>
             <span class="text-desc">
                 作者:<span th:text="${questionDTO.user.getName()}"></span>&nbsp;|
-                关注数:<span th:text="${questionDTO.getLikecount()}"></span>&nbsp;|
-                阅读数: <span th:text="${questionDTO.getViewcount()}" }></span>&nbsp;|
-                发布时间:<span th:text="${#dates.format((questionDTO.gmtcreate),'yyyy MM dd HH:mm')}"></span></span>
+                关注数:<span th:text="${questionDTO.getLikeCount()}"></span>&nbsp;|
+                阅读数: <span th:text="${questionDTO.getViewCount()}" }></span>&nbsp;|
+                发布时间:<span th:text="${#dates.format((questionDTO.gmtCreate),'yyyy MM dd HH:mm')}"></span></span>
             <hr>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:text="${questionDTO.getDescription()}"></div>
             <hr  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >

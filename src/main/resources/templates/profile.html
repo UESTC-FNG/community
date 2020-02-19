@@ -40,7 +40,7 @@
             <h4 class="media-heading" th:text="${questionDTO.getTitle()}"></h4>
         </a>
             <span th:text="${questionDTO.getDescription()}"></span><br>
-            <span class="text-desc">• <span th:text="${questionDTO.getCreator()}"></span> 发起了问题 • <span th:text="${questionDTO.getLikecount()}"></span>人关注 • 0 个回复 • <span th:text="${questionDTO.getViewcount()}" }></span> 次浏览 •发布时间<span th:text="${#dates.format((questionDTO.gmtcreate),'yyyy MM dd HH:mm')}"></span></span>
+            <span class="text-desc">• <span th:text="${questionDTO.getCreator()}"></span> 发起了问题 • <span th:text="${questionDTO.getLikeCount()}"></span>人关注 • 0 个回复 • <span th:text="${questionDTO.getViewCount()}" }></span> 次浏览 •发布时间<span th:text="${#dates.format((questionDTO.gmtCreate),'yyyy MM dd HH:mm')}"></span></span>
 
         </div>
 

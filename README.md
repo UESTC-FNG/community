@@ -12,7 +12,7 @@
 [devtools]
 [MyBatis Generator](https://mybatis.org/generator/running/runningWithMaven.html)
 [LiveReload插件]
-
+[postman](https://www.postman.com/)
 
 ##
 mvn flyway:migrate

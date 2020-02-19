@@ -3,6 +3,9 @@ package com.fng.service;
 
 import com.fng.dto.PageDTO;
 import com.fng.dto.QuestionDTO;
+import com.fng.exception.CustomizeErrorCode;
+import com.fng.exception.CustomizeException;
+import com.fng.mapper.QuestionExtMapper;
 import com.fng.mapper.QuestionMapper;
 import com.fng.mapper.UserMapper;
 import com.fng.model.Question;
@@ -24,6 +27,9 @@ public class QuestionService {
 
     @Autowired(required=false)
     private QuestionMapper questionMapper;
+
+    @Autowired(required=false)
+    private QuestionExtMapper questionExtMapper;
 
 
 
@@ -107,12 +113,15 @@ public class QuestionService {
         return pageDTO;
     }
 
-    public QuestionDTO getById(Integer id,
+    public QuestionDTO getById(Long id,
                                HttpServletRequest request) {
         //初始化QuestionDTO
         QuestionDTO questionDTO=new QuestionDTO();
         //先调用questionMapper查询question
         Question question = questionMapper.selectByPrimaryKey(id);
+        if (question==null){
+            throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
+        }
         //加入user
         User user = (User)request.getSession().getAttribute("user");
        BeanUtils.copyProperties(question,questionDTO);
@@ -123,19 +132,32 @@ public class QuestionService {
     public void insertOrUpdate(Question question) {
         if (question.getId()==null){
             //创建
-            question.setGmtcreate(System.currentTimeMillis());
-            question.setGmtmodified(question.getGmtcreate());
+            question.setGmtCreate(System.currentTimeMillis());
+            question.setGmtModified(question.getGmtCreate());
+            question.setCommitCount(0);
+            question.setViewCount(0);
+            question.setLikeCount(0);
             //插入数据库
             questionMapper.insert(question);
         }else{
             //更新问题
-            question.setGmtmodified(System.currentTimeMillis());
+            question.setGmtModified(System.currentTimeMillis());
 
             QuestionExample example = new QuestionExample();
             example.createCriteria().andIdEqualTo(question.getId());
-            questionMapper.updateByExample(question, example);
+            int updated = questionMapper.updateByExample(question, example);
+            if (updated!=1){
+                throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
+            }
         }
 
 
+    }
+
+    public void incView(Long id) {
+        Question record = new Question();
+        record.setId(id);
+        record.setViewCount(1);
+        questionExtMapper.incView(record);
     }
 }

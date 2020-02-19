@@ -39,7 +39,7 @@ public class PublishController {
             @RequestParam("tag")String tag,
                 HttpServletRequest request,
             Model model,
-            @RequestParam("id")Integer id
+            @RequestParam("id")Long id
     ){
         //将获取的信息填入文本框，防止信息丢失
         model.addAttribute("title",title);
@@ -81,7 +81,7 @@ public class PublishController {
     }
 
     @GetMapping("/publish/{id}")
-    public String edit(@PathVariable(name="id")Integer id,
+    public String edit(@PathVariable(name="id")Long id,
                        Model model){
         Question question = questionMapper.selectByPrimaryKey(id);
         //将获取的信息填入文本框，防止信息丢失
