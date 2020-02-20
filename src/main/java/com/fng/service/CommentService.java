@@ -1,6 +1,5 @@
 package com.fng.service;
 
-import com.fng.dto.CommentCreateDTO;
 import com.fng.dto.CommentDTO;
 import com.fng.enums.CommentTypeEnums;
 import com.fng.exception.CustomizeErrorCode;
@@ -19,7 +18,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -48,7 +46,7 @@ public class CommentService {
 
         if (comment.getType()== CommentTypeEnums.COMMENT.getType()){
             //回复评论
-            Comment dbComment = commentMapper.selectByPrimaryKey(comment.getId());
+            Comment dbComment = commentMapper.selectByPrimaryKey(comment.getParentId());
             if (dbComment == null){
                 throw new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
             }
@@ -69,10 +67,10 @@ public class CommentService {
     }
 
 
-    public List<CommentDTO> listByQuestionId(Long id) {
+    public List<CommentDTO> listByTargetId(Long id, CommentTypeEnums type) {
         //查找comment
         CommentExample example = new CommentExample();
-        example.createCriteria().andParentIdEqualTo(id).andTypeEqualTo(CommentTypeEnums.QUESTION.getType());
+        example.createCriteria().andParentIdEqualTo(id).andTypeEqualTo(type.getType());
         example.setOrderByClause("gmt_create desc");
         List<Comment> comments = commentMapper.selectByExample(example);
         if (comments.size()==0){

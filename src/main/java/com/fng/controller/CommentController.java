@@ -1,7 +1,9 @@
 package com.fng.controller;
 
 import com.fng.dto.CommentCreateDTO;
+import com.fng.dto.CommentDTO;
 import com.fng.dto.ResultDTO;
+import com.fng.enums.CommentTypeEnums;
 import com.fng.exception.CustomizeErrorCode;
 import com.fng.model.Comment;
 import com.fng.model.User;
@@ -10,12 +12,11 @@ import com.fng.service.CommentService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+
+import java.util.List;
 
 import static com.fng.exception.CustomizeErrorCode.NO_LOGIN;
 
@@ -48,5 +49,13 @@ public class CommentController {
         commentService.insert(comment);
         ResultDTO ok = ResultDTO.okOf();
         return ok;
+    }
+
+
+    @ResponseBody
+    @RequestMapping(value = "/comment/{id}",method = RequestMethod.GET)
+    public ResultDTO<List> comment(@PathVariable(name="id")Long id){
+        List<CommentDTO> commentDTOList = commentService.listByTargetId(id, CommentTypeEnums.COMMENT);
+        return ResultDTO.okOfT(commentDTOList);
     }
 }

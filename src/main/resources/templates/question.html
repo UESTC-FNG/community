@@ -9,6 +9,8 @@
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/bootstrap.min.js" type="application/javascript"></script>
     <script src="/js/community.js" type="application/javascript"></script>
+    <script src="/js/moment.js"></script>
+    <script>moment().format();</script>
 </head>
 <body>
 <div th:insert="navigation :: nav"></div>
@@ -19,7 +21,7 @@
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
 <!--         正文   -->
            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-               <h4> <span th:text="${questionDTO.getTitle() }"></span></h4>
+               <h4 class="question-title"> <span th:text="${questionDTO.getTitle() }"></span></h4>
 <!--            正文-->
                <span class="text-desc">
                 作者:<span th:text="${questionDTO.getUser().getName()}"></span>&nbsp;|
@@ -54,17 +56,46 @@
                     <div th:text="${commentDTO.getContent()}"></div>
                     <div class="menu">
                         <span class="glyphicon glyphicon-thumbs-up icon "></span>
-                        <span class="glyphicon glyphicon-comment right-10 icon"></span>
+                        <span class="glyphicon glyphicon-comment right-10 icon" th:data-id="${commentDTO.id}" onclick="collapseComments(this)"></span>
                         <span class="pull-right" th:text="${#dates.format((commentDTO.getGmtCreate()),'MM-dd  HH:mm:ss')}"></span>
                     </div>
+<!--                    二级评论框-->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse sub-comments " th:id="${'comment-'+commentDTO.id}">
+<!--                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment_section" th:each="commentDTO:${commentDTOList}">-->
+<!--                            <div class="media-left">-->
+<!--                                <a href="#">-->
+<!--                                    <img class="media-object img-rounded"-->
+<!--                                         th:src="${commentDTO.getUser().getAvatarUrl()}" >-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--&lt;!&ndash;                            二级评论&ndash;&gt;-->
+<!--                            <div class="media-body comment-CommenterName" th:id="${'comment-body-'+commentDTO.id}" >-->
+<!--                                <h5 class="media-heading" >-->
+<!--                                    <span th:text="${commentDTO.getUser().getName()}"></span>-->
+<!--                                </h5>-->
+<!--                                <div th:text="${commentDTO.getContent()}"></div>-->
+<!--                                <div class="menu">-->
+<!--                                    <span class="pull-right" th:text="${#dates.format((commentDTO.getGmtCreate()),'MM-dd  HH:mm:ss')}"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form-control" placeholder="评论一下" th:id="${'input-'+commentDTO.id}">
+                            <button type="button" class="btn btn-success pull-right btn" onclick="comment(this)" th:data-id="${commentDTO.id}">评论</button>
+                        </div>
+
+
+                    </div>
                 </div>
-
-
             </div>
 
 
 <!--            回复输入框-->
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comment_section">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="comment_section">
+                <h4>
+                    提交回复
+                </h4>
+                <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment-sp">
                 <div class="media-left">
                     <a href="#">
                         <img class="media-object img-rounded"

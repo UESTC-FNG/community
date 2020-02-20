@@ -2,6 +2,7 @@ package com.fng.controller;
 
 import com.fng.dto.CommentDTO;
 import com.fng.dto.QuestionDTO;
+import com.fng.enums.CommentTypeEnums;
 import com.fng.mapper.QuestionExtMapper;
 import com.fng.mapper.QuestionMapper;
 import com.fng.mapper.UserMapper;
@@ -46,7 +47,7 @@ public class QuestionController {
         //查询作者姓名
         User creator = userMapper.selectByPrimaryKey(questionDTO.getCreator());
         model.addAttribute("questionDTO",questionDTO);
-        List<CommentDTO> commentDTOList = commentService.listByQuestionId(id);
+        List<CommentDTO> commentDTOList = commentService.listByTargetId(id, CommentTypeEnums.QUESTION);
         model.addAttribute("commentDTOList",commentDTOList);
         return "question";
     }

@@ -3,6 +3,7 @@
     margin:30px;
 }
 
+
 body{
     background-color:#efefef;
 }
@@ -66,6 +67,9 @@ body{
     font-size:15px;
     cursor:pointer;
 }
+.menu .active{
+    color: #499ef3;
+}
 
 .menu .icon:hover{
     color: #499ef3;
@@ -75,3 +79,23 @@ body{
     border-bottom: 1px solid #efefef;
     padding-bottom: 5px;
 }
+.comment-sp{
+    margin-top: 0px;
+}
+
+.question-title{
+margin-top: 20px;
+    font-weight: 600;
+}
+
+.sub-comments{
+    margin-top: 10px;
+    border: 1px solid #eee;
+    padding-top: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.sub-comments .btn{
+    margin: 10px 0;
+}
+
