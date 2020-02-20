@@ -31,10 +31,22 @@
                <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:text="${questionDTO.getDescription()}"></div>
                <hr  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                   <span  th:each="tags : ${questionDTO.getTag().split(',')}">
+                       <span th:each="tag : ${tags.split('，')}">
+                           <span class="glyphicon glyphicon-tags label label-info  question-tag">
+               <span class="label label-info " th:text="${tag}"></span>
+                           </span>
+                   </span>
+                   </span>
+               </div>
+               <hr  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
                <a class="community-menu" th:href="@{'/publish/'+${questionDTO.getId()}}" th:if="${session.user!=null && session.user.getId() == questionDTO.getUser().getId()}">
             <span class="glyphicon glyphicon-pencil " aria-hidden="true">
             </span>编辑
                </a>
+               </div>
            </div>
 
 <!--            回复-->
@@ -61,24 +73,6 @@
                     </div>
 <!--                    二级评论框-->
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse sub-comments " th:id="${'comment-'+commentDTO.id}">
-<!--                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment_section" th:each="commentDTO:${commentDTOList}">-->
-<!--                            <div class="media-left">-->
-<!--                                <a href="#">-->
-<!--                                    <img class="media-object img-rounded"-->
-<!--                                         th:src="${commentDTO.getUser().getAvatarUrl()}" >-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--&lt;!&ndash;                            二级评论&ndash;&gt;-->
-<!--                            <div class="media-body comment-CommenterName" th:id="${'comment-body-'+commentDTO.id}" >-->
-<!--                                <h5 class="media-heading" >-->
-<!--                                    <span th:text="${commentDTO.getUser().getName()}"></span>-->
-<!--                                </h5>-->
-<!--                                <div th:text="${commentDTO.getContent()}"></div>-->
-<!--                                <div class="menu">-->
-<!--                                    <span class="pull-right" th:text="${#dates.format((commentDTO.getGmtCreate()),'MM-dd  HH:mm:ss')}"></span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <input type="text" class="form-control" placeholder="评论一下" th:id="${'input-'+commentDTO.id}">
                             <button type="button" class="btn btn-success pull-right btn" onclick="comment(this)" th:data-id="${commentDTO.id}">评论</button>
@@ -134,9 +128,26 @@
                 </h6>
             </div>
 
+<!--            微信-->
+            <hr class  ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4>联系方式</h4>
+                <span>QQ:784321631</span><br>
+                <span>邮箱:xxxxxxxxx@qq.com</span>
+
+
+            </div>
+
+<!--            相关问题-->
             <hr class  ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4>相关问题</h4>
+                <ul class="question-rated">
+                    <li th:each="related:${relatedQuestions}">
+                        <a th:href="@{'/question/'+${related.getId()}}" th:text="${related.getTitle()}"></a>
+                    </li>
+                </ul>
+
             </div>
 
 

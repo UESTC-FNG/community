@@ -44,11 +44,13 @@ public class QuestionController {
         questionService.incView(id);
         //这里的questionDTO，中的user是使用者  需要的姓名是作者的
         QuestionDTO questionDTO= questionService.getById(id,request,model);
+        List<QuestionDTO> relatedQuestions=questionService.selectRelated(questionDTO);
         //查询作者姓名
         User creator = userMapper.selectByPrimaryKey(questionDTO.getCreator());
         model.addAttribute("questionDTO",questionDTO);
         List<CommentDTO> commentDTOList = commentService.listByTargetId(id, CommentTypeEnums.QUESTION);
         model.addAttribute("commentDTOList",commentDTOList);
+        model.addAttribute("relatedQuestions",relatedQuestions);
         return "question";
     }
 }
