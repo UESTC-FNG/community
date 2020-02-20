@@ -25,12 +25,53 @@ body{
 
 .profile .section{
     margin-top: 15px;
+
 }
 .community-menu{
     color:#999;
     font-size: 13px;
+    display: block;
+    margin-bottom: 15px;
 }
 
 .mid{
     margin: 50px;
+}
+.comment-CommenterName{
+    padding-top: 10px;
+}
+.comment-textarea{
+    margin: 10px 0;
+}
+.comment-submit{
+    float: right;
+    margin-bottom: 10px;
+}
+
+.right{
+    margin-left: 13px;
+}
+.right-10{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.menu{
+    color: #999;
+    margin-top: 5px;
+
+}
+.menu .icon{
+    magin-right:6px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.menu .icon:hover{
+    color: #499ef3;
+}
+.comment_section {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 5px;
 }

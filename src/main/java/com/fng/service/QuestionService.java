@@ -15,6 +15,7 @@ import org.apache.ibatis.session.RowBounds;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
@@ -114,7 +115,8 @@ public class QuestionService {
     }
 
     public QuestionDTO getById(Long id,
-                               HttpServletRequest request) {
+                               HttpServletRequest request,
+                               Model model) {
         //初始化QuestionDTO
         QuestionDTO questionDTO=new QuestionDTO();
         //先调用questionMapper查询question
@@ -124,8 +126,11 @@ public class QuestionService {
         }
         //加入user
         User user = (User)request.getSession().getAttribute("user");
+        model.addAttribute("user",user);
        BeanUtils.copyProperties(question,questionDTO);
-       questionDTO.setUser(user);
+       //查找作者
+        User creator = userMapper.selectByPrimaryKey(question.getCreator());
+        questionDTO.setUser(creator);
         return questionDTO;
     }
 
@@ -134,7 +139,7 @@ public class QuestionService {
             //创建
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
-            question.setCommitCount(0);
+            question.setCommentCount(0);
             question.setViewCount(0);
             question.setLikeCount(0);
             //插入数据库

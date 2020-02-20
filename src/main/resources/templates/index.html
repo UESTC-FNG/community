@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="css/community.css">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js" type="application/javascript"></script>
+    <script type="application/javascript">
+        window.onload=function(){
+
+            let closable = window.localStorage.getItem("closable");
+            if (closable=="true"){
+                window.close();
+                window.localStorage.removeItem("closable");
+            }
+        }
+    </script>
 </head>
 <body>
 <div th:insert="navigation :: nav"></div>
@@ -29,7 +39,7 @@
                          <a th:href="@{'/question/'+${questionDTO.getId()}}" th:text="${questionDTO.getTitle()}"></a>
                     </h4>
                     <span th:text="${questionDTO.getDescription()}"></span><br>
-                    <span class="text-desc">• <span th:text="${questionDTO.getCreator()}"></span> 发起了问题 • <span th:text="${questionDTO.getLikeCount()}"></span>人关注 • 0 个回复 • <span th:text="${questionDTO.getViewCount()}" }></span> 次浏览 •发布时间<span th:text="${#dates.format((questionDTO.gmtCreate),'yyyy MM dd HH:mm')}"></span></span>
+                    <span class="text-desc">• <span th:text="${questionDTO.getUser().getName()}"></span> 发起了问题 • <span th:text="${questionDTO.getLikeCount()}"></span>人关注 • 0 个回复 • <span th:text="${questionDTO.getViewCount()}" }></span> 次浏览 •发布时间<span th:text="${#dates.format((questionDTO.gmtCreate),'yyyy-MM-dd HH:mm')}"></span></span>
 
                 </div>
 
