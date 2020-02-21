@@ -103,3 +103,29 @@ function comment(e){
     comment2target(commentId,2,content)
 
 }
+
+
+function selectTag(value){
+    var val =value.getAttribute("data-tag");
+    var previous=$("#tag").val();
+    if (previous){
+        if (previous.indexOf(val)!=-1){
+            return ;
+        }else{
+            $("#tag").val(previous+','+val);
+        }
+
+    }else{
+        $("#tag").val(val);
+    }
+}
+
+function showSelectTag(){
+$("#selectTag").show();
+}
+
+function displaySelectTag(){
+    $("#selectTag").hide();
+
+    onblur="displaySelectTag()"
+}

@@ -1,5 +1,8 @@
 package com.fng.controller;
 
+import com.fng.cache.TagCache;
+import com.fng.exception.CustomizeErrorCode;
+import com.fng.exception.CustomizeException;
 import com.fng.mapper.QuestionMapper;
 import com.fng.mapper.UserMapper;
 import com.fng.service.QuestionService;
@@ -22,7 +25,8 @@ public class PublishController {
     @Autowired(required = false)
     private QuestionMapper questionMapper;
     @GetMapping("/publish")
-    public String publish(){
+    public String publish(Model model) {
+        model.addAttribute("tags",TagCache.get());
         return "publish";
     }
 
@@ -46,6 +50,7 @@ public class PublishController {
         model.addAttribute("description",description);
         model.addAttribute("tag",tag);
         model.addAttribute("id",id);
+        model.addAttribute("tags",TagCache.get());
 
         //判断输入信息是否为空
         if (title==null||title==""){
@@ -61,6 +66,12 @@ public class PublishController {
             return "publish";
         }
         User user = (User)request.getSession().getAttribute("user");
+
+        if (!TagCache.isValid(tag)){
+            //提示输入标签不正确
+            model.addAttribute("error","输入的标签不合法");
+            return "publish";
+        }
 
         if (user==null){
             model.addAttribute("error","用户未登录");
@@ -89,6 +100,8 @@ public class PublishController {
         model.addAttribute("title",question.getTitle());
         model.addAttribute("description",question.getDescription());
         model.addAttribute("tag",question.getTag());
+
+        model.addAttribute("tags", TagCache.get());
 
         return "publish";
     }

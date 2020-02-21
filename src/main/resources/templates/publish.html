@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/community.css">
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="/js/community.js" type="application/javascript"></script>
 </head>
 <body>
 <div th:insert="navigation :: nav"></div>
@@ -21,15 +22,36 @@
                 <input type="hidden" name="id" th:value="${id}">
                 <div class="form-group">
                     <label for="title">问题标题（简单扼要）：</label>
-                    <input type="text" class="form-control" name="title" id="title" th:value="${title}" placeholder="问题标题......">
+                    <input type="text" class="form-control" name="title" id="title" th:value="${title}" placeholder="问题标题......"
+                    autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="title">问题补充（必填，请参照右侧提示）：</label>
                     <textarea class="form-control" name="description" id="description" th:text="${description}" cols="30" rows="10" ></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-group" >
                     <label for="title">添加标签：</label>
-                    <input type="text" class="form-control" id="tag" name="tag" th:value="${tag}" placeholder="输入标签,以逗号分隔">
+                    <input type="text" class="form-control" id="tag" name="tag" th:value="${tag}" placeholder="输入标签,以逗号分隔"
+                    autocomplete="off" onclick="showSelectTag()" >
+                    <div ID="selectTag" style="display: none" class="publish-tag-tag">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" th:each="tagDTO:${tags}">
+                                <a th:href="${'#'+tagDTO.getCategoryName()}" aria-controls="home" role="tab" data-toggle="tab" th:text="${tagDTO.getCategoryName()}"></a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" th:each="tagDTO:${tags}" class="tab-pane " th:id="${tagDTO.getCategoryName()}">
+                                <span class="label label-info" th:each="selectTag:${tagDTO.getTags()}" >
+                                    <span class="glyphicon glyphicon-tags " th:data-tag="${selectTag}" th:onclick="selectTag(this)" th:text="${selectTag}">
+                                    </span>
+                                </span>
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">  <span class="label label-info"><span class="glyphicon glyphicon-tags" onclick="selectTag('MyBatis')">MyBatis</span></span>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
                 <span class="alert alert-danger" role="alert" th:text="${error}" th:if="${error != null}"></span>
