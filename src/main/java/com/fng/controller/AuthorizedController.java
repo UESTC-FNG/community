@@ -2,6 +2,7 @@ package com.fng.controller;
 
 import com.fng.dto.AccessTokenDTO;
 import com.fng.dto.GitHubUser;
+import com.fng.mapper.NotificationExtMapper;
 import com.fng.mapper.UserMapper;
 import com.fng.provider.GitHunProvider;
 import com.fng.service.UserService;
@@ -39,6 +40,9 @@ public class AuthorizedController {
     @Autowired
     private UserService userService;
 
+    @Autowired(required = false)
+    private    NotificationExtMapper notificationExtMapper;
+
 
     @GetMapping("/callback")
     public String callback(@RequestParam(name="code")String code,
@@ -65,6 +69,11 @@ public class AuthorizedController {
             userService.createOrUpdate(user);
             //写cookie和session
             response.addCookie(new Cookie("token",token));
+
+            //写入通知数
+            int unreadCount = notificationExtMapper.unreadCountById(user);
+            model.addAttribute("unreadCount",unreadCount);
+
             return "redirect:/";
         }else{
             //登录失败

@@ -17,18 +17,39 @@
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
             <h2> <span th:text="${sectionName}"></span></h2>
             <hr>
+
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 " th:if="${section == 'question'}">
+                <div class="media" th:each="questionDTO:${pageNation.questionDTOS}">
+                    <nav aria-label="Page navaigation"></nav>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 " th:if="${section == 'replies'}">
+                <div class="media" th:each="notificationDTO:${notificationDTOList}">
+                    <div class="media-left" >
+                        <a href="#">
+                            <h4 class="media-heading" th:text="${notificationDTO.getNotifier()}"></h4>
+                            <h4 class="media-heading" th:text="${notificationDTO.getType()}"></h4>
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading" th:text="${notificationDTO.getOuterTitle()}"></h4>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 ">
             <div class="list-group section">
                 <a href="/profile/questions" th:class="${section == 'questions'}?'list-group-item active':'list-group-item'">我的问题</a>
                 <a href="/profile/replies"  th:class="${section == 'replies'}?'active list-group-item':'list-group-item '">
                     最新回复
-                <span class="badge">14</span>
+                <span class="badge" th:text="${unreadCount}"></span>
                 </a>
             </div>
         </div>
     </div>
 
+<!--    我的问题数据展示-->
+    <div th:if="${section == 'questions'}">
     <div class="media" th:each="questionDTO:${pageNation.getQuestionDTOS()}">
         <div class="media-left">
             <a href="#">
@@ -37,42 +58,46 @@
             </a>
         </div>
         <div class="media-body" ><a th:href="@{'/question/'+${questionDTO.getId()}}" >
-            <h4 class="media-heading" th:text="${questionDTO.getTitle()}"></h4>
+            <h4 class="media-heading" >
+                <a th:href="@{'/question/'+${questionDTO.getId()}}" th:text="${questionDTO.title}"></a>
+            </h4>
         </a>
             <span th:text="${questionDTO.getDescription()}"></span><br>
             <span class="text-desc">• <span th:text="${questionDTO.getCreator()}"></span> 发起了问题 • <span th:text="${questionDTO.getLikeCount()}"></span>人关注 • 0 个回复 • <span th:text="${questionDTO.getViewCount()}" }></span> 次浏览 •发布时间<span th:text="${#dates.format((questionDTO.gmtCreate),'yyyy MM dd HH:mm')}"></span></span>
-
         </div>
+    </div>
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li>
+                    <a th:if="${pageNation.getShowFirstPage()}"  th:href="@{'/profile/'+${section}(page=${1})}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li>
+                    <a th:if="${pageNation.getShowPre()}"  th:href="@{/profile/${section}(page=${pageNation.page-1})}" aria-label="Previous">
+                        <span aria-hidden="true">&lt;</span>
+                    </a>
+                </li>
+                <li th:class="${pageNation.page==page} ? 'active':''" th:each="page:${pageNation.pages}"><a th:href="@{/profile/${section}(page=${page})}"  th:text="${page}"></a></li>
 
+                <li>
+                    <a th:if="${pageNation.getShowNext()}"  th:href="@{/profile/${section}(page=${pageNation.page+1})}" aria-label="Next">
+                        <span aria-hidden="true">&gt;</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a th:if="${pageNation.getShowEndPage()}"  th:href="@{/profile/questions(page=${pageNation.totalPage})}" aria-label="Previous">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
-    <nav aria-label="Page navigation">
-        <ul class="pagination">
-            <li>
-                <a th:if="${pageNation.getShowFirstPage()}"  th:href="@{'/profile/'+${section}(page=${1})}" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li>
-                <a th:if="${pageNation.getShowPre()}"  th:href="@{/profile/${section}(page=${pageNation.page-1})}" aria-label="Previous">
-                    <span aria-hidden="true">&lt;</span>
-                </a>
-            </li>
-            <li th:class="${pageNation.page==page} ? 'active':''" th:each="page:${pageNation.pages}"><a th:href="@{/profile/${section}(page=${page})}"  th:text="${page}"></a></li>
 
-            <li>
-                <a th:if="${pageNation.getShowNext()}"  th:href="@{/profile/${section}(page=${pageNation.page+1})}" aria-label="Next">
-                    <span aria-hidden="true">&gt;</span>
-                </a>
-            </li>
 
-            <li>
-                <a th:if="${pageNation.getShowEndPage()}"  th:href="@{/profile/questions(page=${pageNation.totalPage})}" aria-label="Previous">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+
 </div>
 </body>
 </html>

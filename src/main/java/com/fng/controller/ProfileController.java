@@ -1,7 +1,9 @@
 package com.fng.controller;
 
+import com.fng.dto.NotificationDTO;
 import com.fng.dto.PageDTO;
 import com.fng.mapper.UserMapper;
+import com.fng.service.NotificationService;
 import com.fng.service.QuestionService;
 import com.fng.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller
 public class ProfileController {
@@ -21,6 +24,9 @@ public class ProfileController {
 
     @Autowired
     private QuestionService questionService;
+
+    @Autowired(required = false)
+    private NotificationService notificationService;
 
     @GetMapping("/profile/{action}")
     public String profile(@PathVariable(name="action") String action,
@@ -39,13 +45,21 @@ public class ProfileController {
         if ("questions".equals(action)){
             model.addAttribute("section",action);
             model.addAttribute("sectionName","我的问题");
+            PageDTO pageDTO = questionService.list(user.getId(), page, size);
+            model.addAttribute("pageNation",pageDTO);
+            int count = notificationService.unreadCount(user);
+            model.addAttribute("unreadCount",count);
         }else if ("replies".equals(action)){
             model.addAttribute("section",action);
             model.addAttribute("sectionName","最新回复");
+            //需要查询当前用户是否有新通知
+            //获取用户id
+            Integer userId = user.getId();
+            List<NotificationDTO> notificationDTOList = notificationService.listByUserId(userId, model);
+            //添加通知的信息
+            model.addAttribute("notificationDTOList",notificationDTOList);
         }
 
-        PageDTO pageDTO = questionService.list(user.getId(), page, size);
-        model.addAttribute("pageNation",pageDTO);
         return "profile";
     }
 }
