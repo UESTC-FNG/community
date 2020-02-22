@@ -55,7 +55,7 @@ public class CommentController {
         if (comment.getContent()==null|| StringUtils.isBlank(commentCreateDTO.getContent())){
             return ResultDTO.errorOf(CustomizeErrorCode.COMMENT_IS_EMPTY);
         }
-        commentExtMapper.insertAndOutId(comment);
+        commentService.insert(comment);
         //添加新回复之后，添加通知
 
         notificationService.insert(comment);

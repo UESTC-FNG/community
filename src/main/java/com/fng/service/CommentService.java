@@ -32,6 +32,10 @@ public class CommentService {
 
     @Autowired(required = false)
     private NotificationMapper notificationMapper;
+
+    @Autowired(required = false)
+    private CommentExtMapper commentExtMapper;
+
     @Transactional
     public void insert(Comment comment) {
   //判断parentId == null
@@ -48,17 +52,22 @@ public class CommentService {
             if (dbComment == null){
                 throw new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
             }
-            commentMapper.insert(comment);
+            commentExtMapper.insertAndOutId(comment);
             //创建通知
             Notification notification = createNotification(comment, dbComment);
             notificationMapper.insert(notification);
+            //增加回复数
+            Question record = new Question();
+            record.setId(comment.getParentId());
+            record.setCommentCount(1);
+            questionExtMapper.incCommentCount(record);
         }else{
             //回复问题
             Question question = questionMapper.selectByPrimaryKey(comment.getParentId());
             if (question== null){
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }else{
-                commentMapper.insert(comment);
+                commentExtMapper.insertAndOutId(comment);
                 Question record = new Question();
                 record.setId(comment.getParentId());
                 record.setCommentCount(1);
