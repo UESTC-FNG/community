@@ -6,10 +6,15 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/css/community.css">
+    <link rel="stylesheet" href="/css/editormd.min.css">
+    <link rel="stylesheet" href="/css/editormd.preview.min.css">
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/bootstrap.min.js" type="application/javascript"></script>
     <script src="/js/community.js" type="application/javascript"></script>
     <script src="/js/moment.js"></script>
+    <script src="/js/editormd.min.js" type="application/javascript"></script>
+    <script src="/js/lib/marked.min.js" type="application/javascript"></script>
+    <script src="/js/lib/prettify.min.js" type="application/javascript"></script>
     <script>moment().format();</script>
 </head>
 <body>
@@ -29,7 +34,15 @@
                 阅读数: <span th:text="${questionDTO.getViewCount()}" }></span>&nbsp;|
                 发布时间:<span th:text="${#dates.format((questionDTO.gmtCreate),'yyyy-MM-dd HH:mm')}"></span></span>
                <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:text="${questionDTO.getDescription()}"></div>
+<!--               内容 -->
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="question-view" >
+                   <textarea style="display:none" th:text="${questionDTO.getDescription()}"></textarea>
+               </div>
+               <script type="text/javascript">
+                   $(function(){
+                       editormd.markdownToHTML("question-view",{});
+                   });
+               </script>
                <hr  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                    <span  th:each="tags : ${questionDTO.getTag().split(',')}">

@@ -9,6 +9,8 @@
 ##工具
 [flyway](https://flywaydb.org/)
 [lombok  @Data](https://projectlombok.org/)
+[md editor](https://pandao.github.io/editor.md/)
+[TencentCloud](https://cloud.tencent.com/)
 [devtools]
 [MyBatis Generator](https://mybatis.org/generator/running/runningWithMaven.html)
 [LiveReload插件]

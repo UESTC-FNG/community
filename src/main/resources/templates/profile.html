@@ -27,13 +27,13 @@
                 <div class="media" th:each="notificationDTO:${notificationDTOList}">
                     <div class="media-left" >
                         <div>
-                            <h5 class="media-heading" >
+                            <p class="media-heading" >
                                 <span th:text="${notificationDTO.getNotifier().getName()+'' +notificationDTO.getType()}"></span>
                                 <a th:href="@{'/replies/'+${notificationDTO.getId()}}"
                                    th:text="${notificationDTO.getOuterTitle()}"   >
                                 </a>
                                 <span class="label label-danger" th:if="${notificationDTO.getStatus()==0}">未读</span>
-                            </h5>
+                            </p>
                         </div>
                     </div>
                 </div>

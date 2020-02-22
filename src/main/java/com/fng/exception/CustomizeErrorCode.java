@@ -8,7 +8,8 @@ public enum CustomizeErrorCode implements ICustomizeErrorCode {
     COMMENT_TYPE_WRONG(2005,"评论类型错误或不存在"),
     COMMENT_NOT_FOUND(2006,"你找的评论不存在，换一个试试吧"),
     COMMENT_IS_EMPTY(2007,"评论内容为空，请重新输入"),
-    TAG_NOT_VALID(2008,"输入的tag不合法，请修改后提交");
+    TAG_NOT_VALID(2008,"输入的tag不合法，请修改后提交"),
+    FILE_UPLOAD_ERROR(2009,"图片上传失败");
 
      String message;
     private Integer code;

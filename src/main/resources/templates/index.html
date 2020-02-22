@@ -38,7 +38,7 @@
                     <h4 class="media-heading" >
                          <a th:href="@{'/question/'+${questionDTO.getId()}}" th:text="${questionDTO.getTitle()}"></a>
                     </h4>
-                    <span th:text="${questionDTO.getDescription()}"></span><br>
+                    <span th:text="${#strings.abbreviate(questionDTO.getDescription(),20)}"></span><br>
                     <span class="text-desc">• <span th:text="${questionDTO.getUser().getName()}"></span> 发起了问题 • <span th:text="${questionDTO.getLikeCount()}"></span>人关注 • 0 个回复 • <span th:text="${questionDTO.getViewCount()}" }></span> 次浏览 •发布时间<span th:text="${#dates.format((questionDTO.gmtCreate),'yyyy-MM-dd HH:mm')}"></span></span>
 
                 </div>
