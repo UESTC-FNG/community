@@ -34,6 +34,25 @@ public class NotificationService {
     @Autowired(required = false)
     private QuestionMapper questionMapper;
 
+
+
+    public  void insert(Comment comment) {
+        Notification notification=new Notification();
+        notification.setType(comment.getType());
+        notification.setStatus(0);
+        notification.setGmtCreate(System.currentTimeMillis());
+        notification.setNotifier(comment.getCommentator());
+        if (comment.getType()==1){
+            Question question = questionMapper.selectByPrimaryKey(comment.getParentId());
+            notification.setReceiver(question.getCreator());
+        }else{
+            Comment comment1 = commentMapper.selectByPrimaryKey(comment.getParentId());
+            notification.setReceiver(comment1.getCommentator());
+        }
+        notification.setOuterid(comment.getId());
+        notificationMapper.insert(notification);
+    }
+
     public List<NotificationDTO> listByUserId(Integer userId, Model model) {
         //查出type为0的和type为1的通知，（状态为0 未读）
         NotificationExample example = new NotificationExample();
@@ -57,11 +76,13 @@ public class NotificationService {
                 Question question = questionMapper.selectByPrimaryKey(comment.getParentId());
                 notificationDTO.setOuterTitle(question.getTitle());
                 notificationDTO.setType(NotificationEnums.REPLY_QUESTION.getName());
+                notificationDTO.setParentId(comment.getParentId());
             }else{
                 //从comment中查找
                 Comment parentComment = commentMapper.selectByPrimaryKey(comment.getParentId());
                 notificationDTO.setOuterTitle(parentComment.getContent());
                 notificationDTO.setType(NotificationEnums.REPLY_COMMENT.getName());
+                notificationDTO.setParentId(parentComment.getParentId());
             }
             if (notification.getStatus()== NotificationStatusEnums.UNREAD.getType()){
                 unreadCount++;
@@ -92,5 +113,16 @@ public class NotificationService {
         int count = notificationExtMapper.unreadCountById(user);
         return count;
 
+    }
+
+    public Long getParentIdById(Long id) {
+        Notification notification = notificationMapper.selectByPrimaryKey(id);
+        Comment comment = commentMapper.selectByPrimaryKey(notification.getOuterid());
+        if (comment.getType()==1){
+            return comment.getParentId();
+        }else{
+            Comment comment1 = commentMapper.selectByPrimaryKey(comment.getParentId());
+            return  comment1.getParentId();
+        }
     }
 }

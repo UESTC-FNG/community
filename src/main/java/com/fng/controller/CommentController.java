@@ -5,17 +5,18 @@ import com.fng.dto.CommentDTO;
 import com.fng.dto.ResultDTO;
 import com.fng.enums.CommentTypeEnums;
 import com.fng.exception.CustomizeErrorCode;
+import com.fng.mapper.CommentExtMapper;
+import com.fng.mapper.CommentMapper;
 import com.fng.model.Comment;
 import com.fng.model.User;
-
 import com.fng.service.CommentService;
+import com.fng.service.NotificationService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-
 import java.util.List;
 
 import static com.fng.exception.CustomizeErrorCode.NO_LOGIN;
@@ -25,6 +26,14 @@ public class CommentController {
 
     @Autowired()
     private CommentService commentService;
+
+    @Autowired(required = false)
+    private CommentExtMapper commentExtMapper;
+
+    @Autowired()
+    private NotificationService notificationService;
+    @Autowired(required = false)
+    private CommentMapper commentMapper;
 
     @ResponseBody
     @RequestMapping(value = "/comment",method = RequestMethod.POST)
@@ -46,7 +55,10 @@ public class CommentController {
         if (comment.getContent()==null|| StringUtils.isBlank(commentCreateDTO.getContent())){
             return ResultDTO.errorOf(CustomizeErrorCode.COMMENT_IS_EMPTY);
         }
-        commentService.insert(comment);
+        commentExtMapper.insertAndOutId(comment);
+        //添加新回复之后，添加通知
+
+        notificationService.insert(comment);
         ResultDTO ok = ResultDTO.okOf();
         return ok;
     }

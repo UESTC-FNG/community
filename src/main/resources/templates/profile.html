@@ -26,18 +26,20 @@
             <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 " th:if="${section == 'replies'}">
                 <div class="media" th:each="notificationDTO:${notificationDTOList}">
                     <div class="media-left" >
-                        <a href="#">
-                            <h4 class="media-heading" th:text="${notificationDTO.getNotifier()}"></h4>
-                        </a>
-                        <h4 class="media-heading" th:text="${notificationDTO.getType()}"></h4>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading" th:text="${notificationDTO.getOuterTitle()}"></h4>
+                        <div>
+                            <h5 class="media-heading" >
+                                <span th:text="${notificationDTO.getNotifier().getName()+'' +notificationDTO.getType()}"></span>
+                                <a th:href="@{'/replies/'+${notificationDTO.getId()}}"
+                                   th:text="${notificationDTO.getOuterTitle()}"   >
+                                </a>
+                                <span class="label label-danger" th:if="${notificationDTO.getStatus()==0}">未读</span>
+                            </h5>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 ">
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
             <div class="list-group section">
                 <a href="/profile/questions" th:class="${section == 'questions'}?'list-group-item active':'list-group-item'">我的问题</a>
                 <a href="/profile/replies"  th:class="${section == 'replies'}?'active list-group-item':'list-group-item '">
