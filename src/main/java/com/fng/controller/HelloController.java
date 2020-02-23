@@ -23,11 +23,13 @@ public class HelloController {
     public String index(HttpServletRequest request,
                         Model model,
                         @RequestParam(name="page",defaultValue = "1")Integer page,
-                        @RequestParam(name="size",defaultValue = "7")Integer size) {
+                        @RequestParam(name="size",defaultValue = "7")Integer size,
+                        @RequestParam(name="search",required = false)String search) {
 
             //questionMapper 针对 question,需要对question user进行组合，因此创建service层
-        PageDTO pageNation =questionService.list(page,size);
+        PageDTO pageNation =questionService.list(search,page,size);
         model.addAttribute("pageNation",pageNation);
+        model.addAttribute("search",search);
         return "index";
     }
 }

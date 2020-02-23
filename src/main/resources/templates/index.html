@@ -60,7 +60,7 @@
                     <li th:class="${pageNation.page==page} ? 'active':''" th:each="page:${pageNation.pages}"><a th:href="@{/(page=${page})}"  th:text="${page}"></a></li>
 
                     <li>
-                        <a th:if="${pageNation.getShowNext()}"  th:href="@{/(page=${pageNation.page+1})}" aria-label="Next">
+                        <a th:if="${pageNation.getShowNext()}"  th:href="@{/(page=${pageNation.page+1},search=${search})}" aria-label="Next">
                             <span aria-hidden="true">&gt;</span>
                         </a>
                     </li>

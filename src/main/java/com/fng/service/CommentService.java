@@ -86,7 +86,7 @@ public class CommentService {
         notification.setReceiver(question.getCreator());
         notification.setType(NotificationEnums.REPLY_QUESTION.getType());
         notification.setStatus(NotificationStatusEnums.UNREAD.getType());
-        notification.setOuterid(comment.getParentId());
+        notification.setOuterid(comment.getId());
         return notification;
     }
 
@@ -98,7 +98,7 @@ public class CommentService {
         notification.setType(NotificationEnums.REPLY_COMMENT.getType());
         notification.setStatus(NotificationStatusEnums.UNREAD.getType());
         ;
-        notification.setOuterid(comment.getParentId());
+        notification.setOuterid(comment.getId());
         return notification;
     }
 

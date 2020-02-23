@@ -3,6 +3,7 @@ package com.fng.service;
 
 import com.fng.dto.PageDTO;
 import com.fng.dto.QuestionDTO;
+import com.fng.dto.QuestionQueryDTO;
 import com.fng.exception.CustomizeErrorCode;
 import com.fng.exception.CustomizeException;
 import com.fng.mapper.QuestionExtMapper;
@@ -37,11 +38,17 @@ public class QuestionService {
 
 
 
-    public PageDTO list(Integer page, Integer size) {
+    public PageDTO list(String search,Integer page, Integer size) {
+        if (StringUtils.isNotBlank(search)){
+            String[] strings = StringUtils.split(search, " ");
+            search = String.join("|", strings);
+        }
         if (page<1){
             page=1;
         }
-        Integer totalCount = (int) questionMapper.countByExample(new QuestionExample());
+        QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
+        questionQueryDTO.setSearch(search);
+        Integer totalCount =questionExtMapper.countBySearch(questionQueryDTO);
         Integer totalPage=0;
         if (totalCount%5==0){
             totalPage=totalCount/5;
@@ -59,7 +66,9 @@ public class QuestionService {
         //通过questionMapper获得question list
         QuestionExample example = new QuestionExample();
         example.setOrderByClause("gmt_create desc");
-        List<Question> questions = questionMapper.selectByExampleWithBLOBsWithRowbounds(example, new RowBounds(offset, size));
+        questionQueryDTO.setSize(size);
+        questionQueryDTO.setPage(offset);
+        List<Question> questions = questionExtMapper.selectBySearch(questionQueryDTO);
         //根据question获得user
         List<QuestionDTO> questionDTOList=new ArrayList<>();
         PageDTO pageDTO=new PageDTO();

@@ -1,6 +1,5 @@
 package com.fng.controller;
 
-import com.fng.dto.NotificationDTO;
 import com.fng.mapper.NotificationMapper;
 import com.fng.model.Notification;
 import com.fng.model.NotificationExample;
