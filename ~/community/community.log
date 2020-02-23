@@ -1,0 +1,21 @@
+2020-02-23 15:55:41.614  INFO 8348 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 8348 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 15:55:41.616  INFO 8348 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 15:55:41.657  INFO 8348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-23 15:55:41.657  INFO 8348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-23 15:55:42.672  INFO 8348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 15:55:42.678  INFO 8348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 15:55:42.678  INFO 8348 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 15:55:42.748  INFO 8348 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 15:55:42.748  INFO 8348 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1083 ms
+2020-02-23 15:55:42.774  INFO 8348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-23 15:55:42.878  INFO 8348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-23 15:55:42.882  INFO 8348 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 15:55:43.288  INFO 8348 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 15:55:43.329  INFO 8348 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 15:55:43.498  INFO 8348 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 15:55:43.542  INFO 8348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 15:55:43.545  INFO 8348 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 2.232 seconds (JVM running for 3.266)
+2020-02-23 15:56:25.398  INFO 8348 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-23 15:56:25.399  INFO 8348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-23 15:56:25.403  INFO 8348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-02-23 15:56:25.814  WARN 8348 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [348] milliseconds.
