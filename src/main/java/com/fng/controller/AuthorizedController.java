@@ -7,6 +7,7 @@ import com.fng.mapper.UserMapper;
 import com.fng.provider.GitHunProvider;
 import com.fng.service.UserService;
 import com.fng.model.User;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -20,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
 @Controller
+@Slf4j
 public class AuthorizedController {
 
     @Autowired
@@ -78,6 +80,7 @@ public class AuthorizedController {
         }else{
             //登录失败
             //重新登陆
+            log.error("callback get github error,{}",gitHubUser);
             return "redirect:/";
         }
     }

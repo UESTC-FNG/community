@@ -18,3 +18,489 @@
 2020-02-23 16:14:47.998  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2020-02-23 16:14:47.999  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 0.528 seconds (JVM running for 362.301)
 2020-02-23 16:14:48.000  INFO 12448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-23 16:21:15.029  INFO 12448 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:21:15.030  INFO 12448 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-02-23 16:21:15.053  INFO 12448 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-02-23 16:21:15.471  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 12448 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 16:21:15.472  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 16:21:15.678  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 16:21:15.679  INFO 12448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 16:21:15.679  INFO 12448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 16:21:15.704  INFO 12448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 16:21:15.704  INFO 12448 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 230 ms
+2020-02-23 16:21:15.713  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2020-02-23 16:21:15.722  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2020-02-23 16:21:15.722  INFO 12448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 16:21:15.855  INFO 12448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:21:15.865  INFO 12448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 16:21:15.962  INFO 12448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 16:21:15.975  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 16:21:15.976  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 0.524 seconds (JVM running for 750.279)
+2020-02-23 16:21:15.977  INFO 12448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-23 16:21:29.364  INFO 12448 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:21:29.365  INFO 12448 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2020-02-23 16:21:29.390  INFO 12448 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2020-02-23 16:21:29.786  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 12448 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 16:21:29.787  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 16:21:29.967  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 16:21:29.968  INFO 12448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 16:21:29.968  INFO 12448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 16:21:29.987  INFO 12448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 16:21:29.987  INFO 12448 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 199 ms
+2020-02-23 16:21:30.000  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2020-02-23 16:21:30.008  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2020-02-23 16:21:30.008  INFO 12448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 16:21:30.124  INFO 12448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:21:30.135  INFO 12448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 16:21:30.236  INFO 12448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 16:21:30.248  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 16:21:30.249  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 0.477 seconds (JVM running for 764.551)
+2020-02-23 16:21:30.250  INFO 12448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-23 16:21:52.434  INFO 12448 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:21:52.435  INFO 12448 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2020-02-23 16:21:52.461  INFO 12448 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2020-02-23 16:21:53.104  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 12448 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 16:21:53.105  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 16:21:53.464  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 16:21:53.465  INFO 12448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 16:21:53.465  INFO 12448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 16:21:53.490  INFO 12448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 16:21:53.490  INFO 12448 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 382 ms
+2020-02-23 16:21:53.509  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2020-02-23 16:21:53.528  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2020-02-23 16:21:53.528  INFO 12448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 16:21:53.705  INFO 12448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:21:53.720  INFO 12448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 16:21:53.842  INFO 12448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 16:21:53.856  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 16:21:53.857  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 0.835 seconds (JVM running for 788.159)
+2020-02-23 16:21:53.858  INFO 12448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-23 16:22:18.009  INFO 12448 --- [Thread-29] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:22:18.010  INFO 12448 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2020-02-23 16:22:18.062  INFO 12448 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2020-02-23 16:22:18.477  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 12448 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 16:22:18.478  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 16:22:18.681  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 16:22:18.681  INFO 12448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 16:22:18.681  INFO 12448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 16:22:18.703  INFO 12448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 16:22:18.703  INFO 12448 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 223 ms
+2020-02-23 16:22:18.714  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2020-02-23 16:22:18.723  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2020-02-23 16:22:18.723  INFO 12448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 16:22:18.829  INFO 12448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:22:18.843  INFO 12448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 16:22:18.936  INFO 12448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 16:22:18.948  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 16:22:18.948  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 0.494 seconds (JVM running for 813.251)
+2020-02-23 16:22:18.949  INFO 12448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-23 16:22:25.882  INFO 12448 --- [Thread-34] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:22:25.883  INFO 12448 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2020-02-23 16:22:25.908  INFO 12448 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2020-02-23 16:22:26.296  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 12448 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 16:22:26.297  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 16:22:26.483  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 16:22:26.484  INFO 12448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 16:22:26.484  INFO 12448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 16:22:26.503  INFO 12448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 16:22:26.503  INFO 12448 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 205 ms
+2020-02-23 16:22:26.512  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2020-02-23 16:22:26.521  INFO 12448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2020-02-23 16:22:26.521  INFO 12448 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 16:22:26.623  INFO 12448 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:22:26.633  INFO 12448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 16:22:26.724  INFO 12448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 16:22:26.737  INFO 12448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 16:22:26.738  INFO 12448 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 0.457 seconds (JVM running for 821.041)
+2020-02-23 16:22:26.739  INFO 12448 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-23 16:23:14.623  INFO 3352 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 3352 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 16:23:14.626  INFO 3352 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 16:23:14.673  INFO 3352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-23 16:23:14.674  INFO 3352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-23 16:23:15.770  INFO 3352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 16:23:15.775  INFO 3352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 16:23:15.775  INFO 3352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 16:23:15.854  INFO 3352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 16:23:15.854  INFO 3352 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1180 ms
+2020-02-23 16:23:15.881  INFO 3352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-23 16:23:15.987  INFO 3352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-23 16:23:15.991  INFO 3352 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 16:23:16.416  INFO 3352 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 16:23:16.457  INFO 3352 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 16:23:16.625  INFO 3352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 16:23:16.659  INFO 3352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 16:23:16.661  INFO 3352 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 2.325 seconds (JVM running for 3.212)
+2020-02-23 21:42:56.279  INFO 2372 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 2372 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 21:42:56.282  INFO 2372 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 21:42:56.333  INFO 2372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-23 21:42:56.334  INFO 2372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-23 21:42:57.739  INFO 2372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 21:42:57.747  INFO 2372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 21:42:57.748  INFO 2372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 21:42:57.840  INFO 2372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 21:42:57.840  INFO 2372 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1506 ms
+2020-02-23 21:42:57.872  INFO 2372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-23 21:42:57.999  INFO 2372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-23 21:42:58.005  INFO 2372 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 21:42:58.533  INFO 2372 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:42:58.576  INFO 2372 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 21:42:58.760  INFO 2372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 21:42:58.796  INFO 2372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 21:42:58.799  INFO 2372 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 2.82 seconds (JVM running for 3.748)
+2020-02-23 21:43:04.162  INFO 2372 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-23 21:43:04.163  INFO 2372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-23 21:43:04.168  INFO 2372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-02-23 21:43:04.216 DEBUG 2372 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.232 DEBUG 2372 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.242 DEBUG 2372 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:04.549  WARN 2372 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [303] milliseconds.
+2020-02-23 21:43:04.564 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.countBySearch    : ==>  Preparing: select count(*) from QUESTION 
+2020-02-23 21:43:04.565 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.countBySearch    : ==> Parameters: 
+2020-02-23 21:43:04.566 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.countBySearch    : <==      Total: 1
+2020-02-23 21:43:04.566 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.selectBySearch   : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-23 21:43:04.567 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.selectBySearch   : ==> Parameters: 0(Integer), 7(Integer)
+2020-02-23 21:43:04.574 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.selectBySearch   : <==      Total: 7
+2020-02-23 21:43:04.574 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:43:04.575 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:43:04.575 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:43:04.583 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:43:04.583 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:43:04.584 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:43:04.585 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:43:04.585 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:43:04.585 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:43:04.585 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:43:04.585 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:43:04.586 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:43:04.586 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:43:04.586 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:43:04.587 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:43:04.587 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:43:04.587 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:43:04.588 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:43:04.588 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:43:04.588 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:43:04.588 DEBUG 2372 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:43:04.908 DEBUG 2372 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.908 DEBUG 2372 --- [http-nio-8080-exec-6] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.908 DEBUG 2372 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.908 DEBUG 2372 --- [http-nio-8080-exec-4] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.908 DEBUG 2372 --- [http-nio-8080-exec-2] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.909 DEBUG 2372 --- [http-nio-8080-exec-6] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.910 DEBUG 2372 --- [http-nio-8080-exec-4] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.910 DEBUG 2372 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:04.910 DEBUG 2372 --- [http-nio-8080-exec-6] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:04.911 DEBUG 2372 --- [http-nio-8080-exec-5] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.911 DEBUG 2372 --- [http-nio-8080-exec-2] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.911 DEBUG 2372 --- [http-nio-8080-exec-4] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:04.912 DEBUG 2372 --- [http-nio-8080-exec-2] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:04.912 DEBUG 2372 --- [http-nio-8080-exec-5] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.914 DEBUG 2372 --- [http-nio-8080-exec-5] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:04.935 DEBUG 2372 --- [http-nio-8080-exec-9] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.935 DEBUG 2372 --- [http-nio-8080-exec-8] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.936 DEBUG 2372 --- [http-nio-8080-exec-7] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.937 DEBUG 2372 --- [http-nio-8080-exec-7] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.937 DEBUG 2372 --- [http-nio-8080-exec-9] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.937 DEBUG 2372 --- [http-nio-8080-exec-8] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.938 DEBUG 2372 --- [http-nio-8080-exec-8] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:04.938 DEBUG 2372 --- [http-nio-8080-exec-7] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:04.940 DEBUG 2372 --- [http-nio-8080-exec-9] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:04.956 DEBUG 2372 --- [http-nio-8080-exec-10] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.956 DEBUG 2372 --- [http-nio-8080-exec-10] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.957 DEBUG 2372 --- [http-nio-8080-exec-10] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:04.982 DEBUG 2372 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:04.983 DEBUG 2372 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:04.983 DEBUG 2372 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:43:05.067 DEBUG 2372 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:43:05.067 DEBUG 2372 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:43:05.067 DEBUG 2372 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:45:58.557  INFO 2372 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:45:58.558  INFO 2372 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-23 21:45:58.593  INFO 2372 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-23 21:45:59.023  INFO 2372 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 2372 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 21:45:59.023  INFO 2372 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 21:45:59.251  INFO 2372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 21:45:59.252  INFO 2372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 21:45:59.252  INFO 2372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 21:45:59.280  INFO 2372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 21:45:59.280  INFO 2372 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 254 ms
+2020-02-23 21:45:59.290  INFO 2372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-23 21:45:59.299  INFO 2372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-23 21:45:59.299  INFO 2372 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 21:45:59.413  INFO 2372 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:45:59.425  INFO 2372 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 21:45:59.517  INFO 2372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 21:45:59.529  INFO 2372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 21:45:59.530  INFO 2372 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 0.536 seconds (JVM running for 184.48)
+2020-02-23 21:45:59.531  INFO 2372 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-23 21:46:20.653  INFO 2372 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:46:20.655  INFO 2372 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-02-23 21:46:20.681  INFO 2372 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-02-23 21:46:21.096  INFO 2372 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 2372 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 21:46:21.097  INFO 2372 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 21:46:21.313  INFO 2372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 21:46:21.314  INFO 2372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 21:46:21.314  INFO 2372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 21:46:21.341  INFO 2372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 21:46:21.341  INFO 2372 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 243 ms
+2020-02-23 21:46:21.356  INFO 2372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-02-23 21:46:21.368  INFO 2372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-02-23 21:46:21.368  INFO 2372 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 21:46:21.525  INFO 2372 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:46:21.542  INFO 2372 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 21:46:21.661  INFO 2372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 21:46:21.671  INFO 2372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 21:46:21.672  INFO 2372 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 0.597 seconds (JVM running for 206.622)
+2020-02-23 21:46:21.673  INFO 2372 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-23 21:47:13.423  INFO 11928 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 11928 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 21:47:13.426  INFO 11928 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 21:47:13.479  INFO 11928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-23 21:47:13.479  INFO 11928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-23 21:47:14.500  INFO 11928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 21:47:14.508  INFO 11928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 21:47:14.508  INFO 11928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 21:47:14.595  INFO 11928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 21:47:14.595  INFO 11928 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1116 ms
+2020-02-23 21:47:14.627  INFO 11928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-23 21:47:14.738  INFO 11928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-23 21:47:14.744  INFO 11928 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 21:47:15.191  INFO 11928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:47:15.256  INFO 11928 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 21:47:15.458  INFO 11928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 21:47:15.507  INFO 11928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 21:47:15.510  INFO 11928 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 2.4 seconds (JVM running for 3.381)
+2020-02-23 21:47:15.572  INFO 11928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-23 21:47:15.573  INFO 11928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-23 21:47:15.577  INFO 11928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-02-23 21:47:15.620 DEBUG 11928 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:15.634 DEBUG 11928 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:15.645 DEBUG 11928 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:16.043  WARN 11928 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [394] milliseconds.
+2020-02-23 21:47:16.057 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.countBySearch    : ==>  Preparing: select count(*) from QUESTION 
+2020-02-23 21:47:16.058 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.countBySearch    : ==> Parameters: 
+2020-02-23 21:47:16.059 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.countBySearch    : <==      Total: 1
+2020-02-23 21:47:16.059 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.selectBySearch   : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-23 21:47:16.060 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.selectBySearch   : ==> Parameters: 0(Integer), 7(Integer)
+2020-02-23 21:47:16.068 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.selectBySearch   : <==      Total: 7
+2020-02-23 21:47:16.068 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:16.069 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:16.070 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:16.080 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:16.080 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:16.081 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:16.082 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:16.082 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:16.082 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:16.082 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:16.083 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:16.083 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:16.084 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:16.084 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:16.085 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:16.085 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:16.085 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:16.086 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:16.087 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:16.087 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:16.087 DEBUG 11928 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:16.519 DEBUG 11928 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:16.519 DEBUG 11928 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:16.520 DEBUG 11928 --- [http-nio-8080-exec-5] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:16.521 DEBUG 11928 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:16.521 DEBUG 11928 --- [http-nio-8080-exec-2] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:16.521 DEBUG 11928 --- [http-nio-8080-exec-4] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:16.522 DEBUG 11928 --- [http-nio-8080-exec-2] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:16.523 DEBUG 11928 --- [http-nio-8080-exec-4] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:16.524 DEBUG 11928 --- [http-nio-8080-exec-6] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:16.525 DEBUG 11928 --- [http-nio-8080-exec-4] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:16.522 DEBUG 11928 --- [http-nio-8080-exec-5] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:16.523 DEBUG 11928 --- [http-nio-8080-exec-2] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:16.526 DEBUG 11928 --- [http-nio-8080-exec-6] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:16.527 DEBUG 11928 --- [http-nio-8080-exec-6] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:16.529 DEBUG 11928 --- [http-nio-8080-exec-5] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:16.689 DEBUG 11928 --- [http-nio-8080-exec-7] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:16.689 DEBUG 11928 --- [http-nio-8080-exec-7] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:16.691 DEBUG 11928 --- [http-nio-8080-exec-7] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:45.528 DEBUG 11928 --- [http-nio-8080-exec-8] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:45.528 DEBUG 11928 --- [http-nio-8080-exec-8] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:45.529 DEBUG 11928 --- [http-nio-8080-exec-8] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:45.530 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.QuestionExtMapper.countBySearch    : ==>  Preparing: select count(*) from QUESTION 
+2020-02-23 21:47:45.530 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.QuestionExtMapper.countBySearch    : ==> Parameters: 
+2020-02-23 21:47:45.530 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.QuestionExtMapper.countBySearch    : <==      Total: 1
+2020-02-23 21:47:45.530 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.QuestionExtMapper.selectBySearch   : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-23 21:47:45.531 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.QuestionExtMapper.selectBySearch   : ==> Parameters: 0(Integer), 7(Integer)
+2020-02-23 21:47:45.533 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.QuestionExtMapper.selectBySearch   : <==      Total: 7
+2020-02-23 21:47:45.533 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:45.533 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:45.535 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:45.535 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:45.535 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:45.536 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:45.536 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:45.536 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:45.536 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:45.537 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:45.537 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:45.537 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:45.537 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:45.537 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:45.538 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:45.538 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:45.538 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:45.539 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:45.539 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:47:45.540 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:47:45.540 DEBUG 11928 --- [http-nio-8080-exec-8] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:47:45.566 DEBUG 11928 --- [http-nio-8080-exec-9] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:45.567 DEBUG 11928 --- [http-nio-8080-exec-9] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:45.567 DEBUG 11928 --- [http-nio-8080-exec-10] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:45.567 DEBUG 11928 --- [http-nio-8080-exec-10] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:45.567 DEBUG 11928 --- [http-nio-8080-exec-9] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:45.567 DEBUG 11928 --- [http-nio-8080-exec-10] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:45.567 DEBUG 11928 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:45.567 DEBUG 11928 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:45.567 DEBUG 11928 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:45.568 DEBUG 11928 --- [http-nio-8080-exec-4] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:45.568 DEBUG 11928 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:45.568 DEBUG 11928 --- [http-nio-8080-exec-4] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:45.568 DEBUG 11928 --- [http-nio-8080-exec-1] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:45.568 DEBUG 11928 --- [http-nio-8080-exec-4] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:45.568 DEBUG 11928 --- [http-nio-8080-exec-3] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:47:45.601 DEBUG 11928 --- [http-nio-8080-exec-2] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:47:45.601 DEBUG 11928 --- [http-nio-8080-exec-2] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:47:45.602 DEBUG 11928 --- [http-nio-8080-exec-2] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:48:43.595 DEBUG 11928 --- [http-nio-8080-exec-6] c.fng.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-23 21:48:43.596 DEBUG 11928 --- [http-nio-8080-exec-6] c.fng.mapper.UserMapper.selectByExample  : ==> Parameters: 91491e82-58ad-4439-8424-d8b171440468(String)
+2020-02-23 21:48:43.596 DEBUG 11928 --- [http-nio-8080-exec-6] c.fng.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-02-23 21:48:43.603 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.QuestionExtMapper.countBySearch    : ==>  Preparing: select count(*) from QUESTION 
+2020-02-23 21:48:43.604 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.QuestionExtMapper.countBySearch    : ==> Parameters: 
+2020-02-23 21:48:43.604 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.QuestionExtMapper.countBySearch    : <==      Total: 1
+2020-02-23 21:48:43.605 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.QuestionExtMapper.selectBySearch   : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-23 21:48:43.605 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.QuestionExtMapper.selectBySearch   : ==> Parameters: 0(Integer), 7(Integer)
+2020-02-23 21:48:43.609 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.QuestionExtMapper.selectBySearch   : <==      Total: 7
+2020-02-23 21:48:43.609 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:48:43.610 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:48:43.610 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:48:43.610 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:48:43.610 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:48:43.611 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:48:43.613 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:48:43.613 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:48:43.613 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:48:43.614 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:48:43.614 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:48:43.614 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:48:43.614 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:48:43.614 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:48:43.615 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:48:43.615 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:48:43.615 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:48:43.615 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:48:43.615 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:48:43.615 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:48:43.616 DEBUG 11928 --- [http-nio-8080-exec-5] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:48:44.092  INFO 11928 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:48:44.093  INFO 11928 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-23 21:48:44.309  INFO 11928 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-23 21:48:44.720  INFO 11928 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 11928 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 21:48:44.720  INFO 11928 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 21:48:44.930  INFO 11928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 21:48:44.930  INFO 11928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 21:48:44.930  INFO 11928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 21:48:44.954  INFO 11928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 21:48:44.954  INFO 11928 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 232 ms
+2020-02-23 21:48:44.966  INFO 11928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-23 21:48:44.976  INFO 11928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-23 21:48:44.977  INFO 11928 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 21:48:45.111  INFO 11928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:48:45.123  INFO 11928 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 21:48:45.225  INFO 11928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 21:48:45.241  INFO 11928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 21:48:45.241  INFO 11928 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 0.54 seconds (JVM running for 93.112)
+2020-02-23 21:48:45.243  INFO 11928 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-23 21:49:00.044  INFO 11928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-23 21:49:00.045  INFO 11928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-23 21:49:00.048  INFO 11928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-02-23 21:50:57.531  INFO 6892 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 6892 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 21:50:57.534  INFO 6892 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 21:50:57.585  INFO 6892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-23 21:50:57.585  INFO 6892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-23 21:50:58.540  INFO 6892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 21:50:58.546  INFO 6892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 21:50:58.546  INFO 6892 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 21:50:58.634  INFO 6892 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 21:50:58.634  INFO 6892 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1049 ms
+2020-02-23 21:50:58.659  INFO 6892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-23 21:50:58.756  INFO 6892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-23 21:50:58.761  INFO 6892 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 21:50:59.237  INFO 6892 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:50:59.330  INFO 6892 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 21:50:59.563  INFO 6892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 21:50:59.613  INFO 6892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 21:50:59.617  INFO 6892 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 2.383 seconds (JVM running for 3.271)
+2020-02-23 21:51:15.340  INFO 6892 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:51:15.341  INFO 6892 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-23 21:51:15.362  INFO 6892 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-23 21:51:15.767  INFO 6892 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 6892 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 21:51:15.768  INFO 6892 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 21:51:16.010  INFO 6892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 21:51:16.010  INFO 6892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 21:51:16.010  INFO 6892 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 21:51:16.036  INFO 6892 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 21:51:16.037  INFO 6892 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 266 ms
+2020-02-23 21:51:16.050  INFO 6892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-23 21:51:16.063  INFO 6892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-23 21:51:16.064  INFO 6892 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 21:51:16.199  INFO 6892 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:51:16.212  INFO 6892 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 21:51:16.317  INFO 6892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 21:51:16.330  INFO 6892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 21:51:16.330  INFO 6892 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 0.588 seconds (JVM running for 19.984)
+2020-02-23 21:51:16.331  INFO 6892 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-23 21:51:21.293  INFO 14656 --- [restartedMain] com.fng.CommunityApplication             : Starting CommunityApplication on DESKTOP-70V9PG4 with PID 14656 (G:\community\target\classes started by 无极之道 in G:\community)
+2020-02-23 21:51:21.296  INFO 14656 --- [restartedMain] com.fng.CommunityApplication             : No active profile set, falling back to default profiles: default
+2020-02-23 21:51:21.352  INFO 14656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-23 21:51:21.353  INFO 14656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-23 21:51:22.487  INFO 14656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 21:51:22.494  INFO 14656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 21:51:22.494  INFO 14656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 21:51:22.580  INFO 14656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 21:51:22.581  INFO 14656 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1228 ms
+2020-02-23 21:51:22.607  INFO 14656 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-23 21:51:22.708  INFO 14656 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-23 21:51:22.713  INFO 14656 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-02-23 21:51:23.091  INFO 14656 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 21:51:23.141  INFO 14656 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-23 21:51:23.306  INFO 14656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 21:51:23.344  INFO 14656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 21:51:23.347  INFO 14656 --- [restartedMain] com.fng.CommunityApplication             : Started CommunityApplication in 2.348 seconds (JVM running for 3.23)
+2020-02-23 21:51:30.435  INFO 14656 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-23 21:51:30.436  INFO 14656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-23 21:51:30.444  INFO 14656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-02-23 21:51:30.491 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.countBySearch    : ==>  Preparing: select count(*) from QUESTION 
+2020-02-23 21:51:30.503 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.countBySearch    : ==> Parameters: 
+2020-02-23 21:51:30.515 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.countBySearch    : <==      Total: 1
+2020-02-23 21:51:30.516 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.selectBySearch   : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-23 21:51:30.518 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.selectBySearch   : ==> Parameters: 0(Integer), 7(Integer)
+2020-02-23 21:51:30.525 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.QuestionExtMapper.selectBySearch   : <==      Total: 7
+2020-02-23 21:51:30.526 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:51:30.527 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:51:30.528 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:51:30.534 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:51:30.534 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:51:30.535 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:51:30.535 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:51:30.535 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:51:30.536 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:51:30.536 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:51:30.536 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:51:30.537 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:51:30.537 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:51:30.537 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:51:30.537 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:51:30.537 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:51:30.538 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:51:30.538 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
+2020-02-23 21:51:30.538 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMTCREATE, GMTMODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-23 21:51:30.538 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : ==> Parameters: 494(Integer)
+2020-02-23 21:51:30.539 DEBUG 14656 --- [http-nio-8080-exec-1] c.f.m.UserMapper.selectByPrimaryKey      : <==      Total: 1
