@@ -40,8 +40,10 @@
 
         select count(*) from QUESTION
         <where>
-            <if test="search != null"></if>
-            and title regexp  #{search}
+            <if test="search != null">
+                and title regexp  #{search}
+            </if>
+
         </where>
 
     </select>
